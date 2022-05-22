@@ -22,17 +22,17 @@ function activeMenuAtCurrentSection(section) {
 
   // o topo da seção chegou ou ultrapassou a linha alvo?
   const sectionTopReachOrPassedTargetline = targeLine >= sectionTop
-  console.log(
-    'o Topo da seção chegou ou passou da linha alvo?',
-    sectionTopReachOrPassedTargetline
-  )
+  // console.log(
+  //   'o Topo da seção chegou ou passou da linha alvo?',
+  //   sectionTopReachOrPassedTargetline
+  // )
 
   //a seção termina onde?
   const sectionEndsAt = sectionTop + sectionHeight
 
   // o final da seção passou da linha alvo
   const sectionEndPassedTargetline = sectionEndsAt <= targeLine
-  console.log('O fundo da seção passou da linha?', sectionEndPassedTargetline)
+  // console.log('O fundo da seção passou da linha?', sectionEndPassedTargetline)
 
   // limites da seção
   const sectionBoundaries =
