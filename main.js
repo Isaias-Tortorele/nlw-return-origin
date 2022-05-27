@@ -20,10 +20,26 @@ function activateMenuAtCurrentSection(section) {
   const sectionHeight = section.offsetHeight
   const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
+<<<<<<< HEAD
   // verificar se a base está abaixo da linha alvo
+=======
+  // o topo da seção chegou ou ultrapassou a linha alvo?
+  const sectionTopReachOrPassedTargetline = targeLine >= sectionTop
+  // console.log(
+  //   'o Topo da seção chegou ou passou da linha alvo?',
+  //   sectionTopReachOrPassedTargetline
+  // )
+>>>>>>> 6c19dc63d76e72cbeab6cd439ecb0b283a400b4c
 
   const sectionEndsAt = sectionTop + sectionHeight
+<<<<<<< HEAD
   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
+=======
+
+  // o final da seção passou da linha alvo
+  const sectionEndPassedTargetline = sectionEndsAt <= targeLine
+  // console.log('O fundo da seção passou da linha?', sectionEndPassedTargetline)
+>>>>>>> 6c19dc63d76e72cbeab6cd439ecb0b283a400b4c
 
   // limites da seção
   const sectionBoundaries =
