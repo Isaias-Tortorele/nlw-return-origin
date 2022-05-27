@@ -21,7 +21,6 @@ function activateMenuAtCurrentSection(section) {
   const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
   // verificar se a base está abaixo da linha alvo
-
   const sectionEndsAt = sectionTop + sectionHeight
   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
