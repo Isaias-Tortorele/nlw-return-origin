@@ -6,8 +6,8 @@
 }
 
 :root {
-  --hue: 170;
-  --primary-color: hsla(var(--hue), 100%, 26%);
+  --hue: 290;
+  --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
 
@@ -17,6 +17,7 @@
   --brand-dark: hsl(var(--hue), 100%, 14%);
 
   --bg-light: hsl(180, 14%, 97%);
+
   font-size: 62.5%; /* 1rem = 10px */
 
   --nav-height: 7.2rem;
@@ -133,7 +134,7 @@ section .content {
 #services .card circle {
   fill: var(--brand-light);
 }
-#navigation .logo path[fill*='#00856F'],
+#navigationId .logo path[fill*='#00856F'],
 #backToTopButton circle {
   fill: var(--primary-color);
 }
@@ -143,12 +144,12 @@ button.open-menu path[stroke*='#00856F'],
   stroke: var(--primary-color);
 }
 
-body.menu-expanded #navigation .logo path,
-#navigation.scroll .logo path {
+body.menu-expanded #navigationId .logo path,
+#navigationId.scroll .logo path {
   fill: white;
 }
 
-#navigation.scroll button.open-menu path[stroke*='#00856F'] {
+#navigationId.scroll button.open-menu path[stroke*='#00856F'] {
   stroke: white;
 }
 
@@ -276,7 +277,7 @@ body.menu-expanded .menu {
 #home::before {
   content: '';
   width: 100%;
-  height: calc(160% + var(--nav-height));
+  height: calc(140% + var(--nav-height));
   background-color: var(--brand-light);
   display: block;
 
@@ -493,8 +494,8 @@ footer .social-links {
     line-height: 5.2rem;
   }
 
-  /* reset */
-  nav#navigation .wrapper * {
+  /* Reset */
+  nav#navigationId .wrapper * {
     margin: 0;
     padding: 0;
     visibility: initial;
@@ -508,32 +509,32 @@ footer .social-links {
     filter: initial;
   }
 
-  nav#navigation .close-menu,
-  nav#navigation .open-menu,
-  nav#navigation .social-links {
+  nav#navigationId .close-menu,
+  nav#navigationId .open-menu,
+  nav#navigationId .social-links {
     display: none;
   }
 
-  nav#navigation .menu {
+  nav#navigationId .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 60%;
   }
 
-  nav#navigation .menu ul:nth-child(1) {
+  nav#navigationId .menu ul:nth-child(1) {
     display: flex;
     gap: 3.2rem;
     font-size: 1.5rem;
   }
 
-  nav#navigation .menu ul li a {
+  nav#navigationId .menu ul li a {
     color: var(--primary-color);
     font-size: 1.5rem;
     opacity: 0.7;
   }
 
-  nav#navigation .menu a.button {
+  nav#navigationId .menu a.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -548,34 +549,34 @@ footer .social-links {
     text-transform: uppercase;
   }
 
-  nav#navigation.scroll .menu a.button:hover {
-    background-color: var(--primary-color);
-    border: none;
+  nav#navigationId.scroll .menu a.button:hover {
     color: white;
+    border: none;
+    background-color: var(--primary-color);
   }
 
-  nav#navigation.scroll .menu ul li a {
+  nav#navigationId.scroll .menu ul li a {
     color: var(--brand-light-2);
     opacity: 0.6;
     /* font-size: 1.5rem; */
   }
 
-  nav#navigation.scroll .menu a.button {
+  nav#navigationId.scroll .menu a.button {
     border-color: white;
     color: white;
   }
 
-  nav#navigation .menu li a {
+  nav#navigationId .menu li a {
     transition: width 0.4s;
   }
 
-  nav#navigation .menu li a.active,
-  nav#navigation .menu li a:hover {
+  nav#navigationId .menu li a.active,
+  nav#navigationId .menu li a:hover {
     opacity: 1;
     font-weight: 700;
   }
 
-  nav#navigation .menu li a::after {
+  nav#navigationId .menu li a::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -590,24 +591,24 @@ footer .social-links {
     transition: width 0.2s;
   }
 
-  nav#navigation.scroll .menu li a::after {
+  nav#navigationId.scroll .menu li a::after {
     background-color: white;
     font-size: 1.5rem;
   }
 
-  nav#navigation .menu li a.active::after,
-  nav#navigation .menu li a:hover::after {
+  nav#navigationId .menu li a.active::after,
+  nav#navigationId .menu li a:hover::after {
     padding-inline: 0.8rem;
     width: 100%;
   }
 
-  nav#navigation.scroll .menu li a.active,
-  nav#navigation.scroll .menu li a:hover {
+  nav#navigationId.scroll .menu li a.active,
+  nav#navigationId.scroll .menu li a:hover {
     opacity: 1;
   }
 
-  nav#navigation.scroll .menu a.button.active,
-  nav#navigation.scroll .menu a.button:hover {
+  nav#navigationId.scroll .menu a.button.active,
+  nav#navigationId.scroll .menu a.button:hover {
     background-color: var(--primary-color);
     filter: brightness(1.3);
     border: none;
